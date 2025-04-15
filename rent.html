@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Properties | Prime Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span>Prime</span>Properties</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="rent.html" class="active">Rent</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h2>Rental Properties</h2>
+            <p>Find your perfect rental home in our extensive listings</p>
+        </div>
+    </section>
+
+    <section class="rental-benefits">
+        <div class="container">
+            <h3>Why Rent With Us?</h3>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <i class="fas fa-home"></i>
+                    <h4>Verified Listings</h4>
+                    <p>All our rental properties are personally verified by our agents to ensure quality.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-file-signature"></i>
+                    <h4>Easy Application</h4>
+                    <p>Streamlined online application process with quick approval times.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-tools"></i>
+                    <h4>Maintenance Support</h4>
+                    <p>24/7 maintenance support for all our rental properties.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Renter Protection</h4>
+                    <p>We ensure all properties meet safety standards and local regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <h3>Filter Rentals</h3>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="type">Property Type</label>
+                    <select id="type">
+                        <option value="all">All Types</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="townhouse">Townhouse</option>
+                        <option value="condo">Condo</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Monthly Rent</label>
+                    <select id="price">
+                        <option value="all">Any Price</option>
+                        <option value="1000">Under $1,000</option>
+                        <option value="1500">$1,000 - $1,500</option>
+                        <option value="2000">$1,500 - $2,000</option>
+                        <option value="2500">$2,000 - $2,500</option>
+                        <option value="3000">$2,500+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="bedrooms">Bedrooms</label>
+                    <select id="bedrooms">
+                        <option value="all">Any</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="pets">Pet Policy</label>
+                    <select id="pets">
+                        <option value="all">Any</option>
+                        <option value="yes">Pet Friendly</option>
+                        <option value="no">No Pets</option>
+                    </select>
+                </div>
+                <button id="apply-filters">Apply Filters</button>
+                <button id="reset-filters">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-properties">
+        <div class="container">
+            <h3>Available Rentals</h3>
+            <div class="properties-grid" id="properties-container">
+                <!-- Properties will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="rental-faq">
+        <div class="container">
+            <h3>Rental FAQs</h3>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What's included in the rent?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>This varies by property. Most include water and trash service. Some may include additional utilities. Our listings clearly specify what's included for each property.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How long are lease terms?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard leases are 12 months, but we also offer flexible terms including 6-month and month-to-month options (premium may apply).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What are the application requirements?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We require proof of income (3x monthly rent), good rental history, and a credit check. Co-signers are accepted for those who don't meet requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How do I schedule a viewing?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Click the "Schedule Viewing" button on any listing or call our rental hotline at (123) 456-7890. We offer in-person and virtual tours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Prime Properties</h4>
+                    <p>Helping you find your desired home. We offer the best properties at competitive prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="rent.html">Rent</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@primeproperties.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prime Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="property-modal">
+        <!-- Same modal as index.html -->
+    </div>
+
+    <script src="js/rent.js"></script>
+</body>
+</html>

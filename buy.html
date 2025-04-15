@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Properties | Prime Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span>Prime</span>Properties</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buy.html" class="active">Buy</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h2>Properties for Sale</h2>
+            <p>Find your dream home from our exclusive listings</p>
+        </div>
+    </section>
+
+    <section class="buying-guide">
+        <div class="container">
+            <h3>Home Buying Guide</h3>
+            <div class="guide-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Get Pre-Approved</h4>
+                    <p>Understand your budget by getting pre-approved for a mortgage loan from our trusted lenders.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Find Your Home</h4>
+                    <p>Browse our extensive listings or work with our agents to find properties that match your criteria.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Make an Offer</h4>
+                    <p>Our experienced agents will help you craft a competitive offer based on market analysis.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Close & Move In</h4>
+                    <p>We'll guide you through inspections, paperwork, and closing to get you into your new home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <h3>Filter Properties</h3>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="type">Property Type</label>
+                    <select id="type">
+                        <option value="all">All Types</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                        <option value="condo">Condo</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range</label>
+                    <select id="price">
+                        <option value="all">Any Price</option>
+                        <option value="200000">Under Nu.200,000</option>
+                        <option value="300000">Nu.200,000 - Nu.300,000</option>
+                        <option value="400000">Nu.300,000 - Nu.400,000</option>
+                        <option value="500000">Nu.400,000 - Nu.500,000</option>
+                        <option value="1000000">Nu.500,000+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="bedrooms">Bedrooms</label>
+                    <select id="bedrooms">
+                        <option value="all">Any</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+                <button id="apply-filters">Apply Filters</button>
+                <button id="reset-filters">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-properties">
+        <div class="container">
+            <h3>Homes for Sale</h3>
+            <div class="properties-grid" id="properties-container">
+                <!-- Properties will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="neighborhood-guides">
+        <div class="container">
+            <h3>Neighborhood Guides</h3>
+            <div class="neighborhoods">
+                <div class="neighborhood">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7J1I1-GdQ1KIbukfcWDI5xo7UFB0UDReKqg&s" alt="Downtown">
+                    <div class="neighborhood-info">
+                        <h4>Downtown Living</h4>
+                        <p>Vibrant urban lifestyle with luxury condos and easy access to amenities.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="neighborhood">
+                    <img src="https://monkeystale.ca/wp-content/uploads/2018/04/3l4a6057-20.jpg" alt="Suburbs">
+                    <div class="neighborhood-info">
+                        <h4>Family Suburbs</h4>
+                        <p>Spacious homes with excellent schools and community facilities.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="neighborhood">
+                    <img src="https://media.istockphoto.com/id/1434981629/photo/bhutan-thimphu-padi-field-and-villages.jpg?s=612x612&w=0&k=20&c=8WvN-OkXDzC09uc1-boeVd6h-tH4J3zcrGYT7Zv7q8M=" alt="Waterfront">
+                    <div class="neighborhood-info">
+                        <h4>Village Properties</h4>
+                        <p>Exclusive homes with private docks and stunning village views.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Prime Properties</h4>
+                    <p>Helping you find your desired home. We offer the best properties at competitive prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="rent.html">Rent</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@primeproperties.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prime Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="property-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Property details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/buy.js"></script>
+</body>
+</html>
